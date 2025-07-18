@@ -6,7 +6,7 @@ module Api
       # GET /api/v1/jobs
       def index
         if params[:user_id]
-          @jobs = Job.where(user_id: params[:user_idd])
+          @jobs = Job.where(user_id: params[:user_id])
         else
           @jobs = Job.all
         end
