@@ -22,3 +22,25 @@ Ketika menyelesaikan tugas ini, kami akan menilai:
 - Anda bisa menggunakan gem rspec untuk unit test
 - Anda bisa menggunakan cache built-in rails atau third party sesuai pilihan Anda
 -
+
+
+## Cara Menjalankan Proyek Secara Lokal
+
+Untuk menjalankan proyek ini secara lokal, pastikan Anda sudah menginstal Docker dan Docker Compose. Kemudian, jalankan perintah berikut:
+
+```bash
+docker-compose up --build
+```
+
+Setelah container berjalan, aplikasi akan tersedia dan siap untuk diuji.
+
+### Menjalankan RSpec
+
+Untuk menjalankan semua tes menggunakan RSpec, jalankan perintah berikut di terminal:
+
+```bash
+docker exec -it interview_test_api-app-1 bundle exec rspec
+```
+
+Pastikan container sudah aktif sebelum menjalankan perintah di atas.
+
